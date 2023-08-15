@@ -26,4 +26,4 @@ RUN rm /etc/nginx/conf.d/default.conf
 COPY nginx.conf /etc/nginx/conf.d/
 
 # Copy the built app from the previous stage
-COPY --from=build /app/dist /usr/share/nginx/html
+COPY --from=build /app/dist/my-app /usr/share/nginx/html
